@@ -4,25 +4,25 @@ The dataset is referred from Kaggle [here](https://www.kaggle.com/datasets/prasa
 
 The SQL queries performed on the Healthcare database yielded in-depth insights into key areas such as patient demographics, medical conditions, treatments, financial data, and hospital performance metrics. These results support data-driven decision-making and provide valuable perspectives for effective healthcare management and analysis.
 
-### 1.Dataset insights & Intial Analysis
+### 1. Dataset insights & Intial Analysis
 -The dataset was examined to obtain a thorough understanding of patient details and healthcare history. Queries included determining the total number of records, calculating the highest and average ages of admitted patients, and assessing patient demographics by age group.
 
-### 2.Medical Conditions & Treatment Prescriptions
+### 2. Medical Conditions & Treatment Prescriptions
 -In-depth analysis was conducted to identify common medical conditions, associated medications, and their occurrence rates. This data helps in understanding the distribution of health issues and the treatment patterns within the dataset.
 
-### 3.Insurance Providers & Hospitals
+### 3. Insurance Providers & Hospitals
 -The project analyzed patient preferences for insurance companies and hospitals based on frequency. This information supports resource planning, provides insights into coverage choices, and helps assess the popularity of healthcare services across various institutions.
 
-### 4.Cost Analysis & Length of Stay
+### 4. Cost Analysis & Length of Stay
 -The financial aspects were analyzed by evaluating the average billing amounts for various medical conditions and calculating the total charges and length of hospital stays for patients across different facilities. This provides insights into cost structures, hospital efficiency, and the duration of patient care.
 
-### 5.Blood Group Distribution & Donation Compatibility
+### 5. Blood Group Distribution & Donation Compatibility
 -The analysis focused on the distribution of blood types across patient demographics, examining potential correlations between age groups and blood type frequencies. Furthermore, a stored procedure, 'Blood_Matcher,' was developed to identify compatible donors and recipients based on criteria such as blood type, age, and hospital affiliation or non-affiliation.
 
-### 6.Yearly Admissions & Insurance Analysis
+### 6. Yearly Admissions & Insurance Analysis
 -The analysis focused on identifying hospitals with patient admissions in the years 2024 and 2025, while also examining billing trends across various insurance providers. This helps in understanding patient admission patterns and uncovering variations in billing practices among different insurance companies.
 
-### 7.Patient Risk Assessment & Classification
+### 7. Patient Risk Assessment & Classification
 -A new column was added to classify patients into high, medium, or low-risk categories based on their medical conditions and test results. This classification enables quick assessment of patient status and guides necessary follow-up actions.
 
 ## Each column in the dataset contains detailed information about the patient, their admission details, and the healthcare services received, making it ideal for various analytical and modeling tasks within the healthcare sector. Below is a concise overview of each column in the dataset:
