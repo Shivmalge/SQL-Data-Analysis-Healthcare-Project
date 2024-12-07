@@ -1,7 +1,6 @@
 # SQL-Data-Analysis-Healthcare-Project
 
-**Language**: SQL  
-**Workbench**: MySQL
+**Language**: [SQL](https://www.sql.org/)  **Workbench**: [SQL Workbench](https://www.sql-workbench.eu/)
 
 The dataset is referred from Kaggle [here](https://www.kaggle.com/datasets/prasad22/healthcare-dataset).
 
