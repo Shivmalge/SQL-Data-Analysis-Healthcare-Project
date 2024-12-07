@@ -105,7 +105,7 @@ select distinct (select count(Blood_Type) from patient_data where Blood_Type in 
 from patient_data
 
 
--- 18. Provide a list of hospitals along with the count of patients admitted in the year 2024 AND 2025?
+-- 17. Provide a list of hospitals along with the count of patients admitted in the year 2024 AND 2025?
 select distinct Hospital,COUNT(PatientName) as Total_Admitted from patient_data
 where YEAR(Date_of_Admission) in (2012)
 group by hospital
@@ -118,13 +118,13 @@ GROUP BY Hospital
 ORDER by Total_Admitted DESC;
 
 
--- 19. Find the average, minimum and maximum billing amount for each insurance provider?
+-- 18. Find the average, minimum and maximum billing amount for each insurance provider?
 
 select Insurance_Provider,Round(AVG(Billing_Amount),0) as Avg_Amount,Round(max(Billing_Amount),0)as Max_Amount ,Round(Min(Billing_Amount),0) as Min_Amount
 from patient_data
 group by Insurance_Provider 
 
--- 20. Create a new column that categorizes patients as high, medium, or low risk based on their medical condition.
+-- 19. Create a new column that categorizes patients as high, medium, or low risk based on their medical condition.
 select PatientName,Medical_Condition,Hospital,Doctor,Test_Results,
 CASE 
 	WHEN Test_Results = 'Inconclusive' THEN 'Need more checkup / cannot be discharged'
