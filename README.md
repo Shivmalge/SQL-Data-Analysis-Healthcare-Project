@@ -1,6 +1,6 @@
 # SQL-Data-Analysis-Healthcare-Project
 
-The dataset is reffered from Kaggle (https://www.kaggle.com/datasets/prasad22/healthcare-dataset). add< br / > 
+The dataset is reffered from Kaggle (https://www.kaggle.com/datasets/prasad22/healthcare-dataset)/  
 The SQL queries performed on the Healthcare database yielded in-depth insights into key areas such as patient demographics, medical conditions, treatments, financial data, and hospital performance metrics. These results support data-driven decision-making and provide valuable perspectives for effective healthcare management and analysis.
 
 ### 1.Dataset insights & Intial Analysis
