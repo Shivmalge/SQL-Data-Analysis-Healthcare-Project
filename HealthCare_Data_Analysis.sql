@@ -43,7 +43,6 @@ group by Medical_Condition
 order by COUNT(Medical_Condition) DESC;
 
 -- 8. Finding Rank & Maximum number of medicines recommended to patients based on Medical Condition pertaining to them.
-select * from patient_data;
 select Medical_Condition,Medication,COUNT(Medication)[Max no Medicines recommended],
 RANK() over(partition by Medical_Condition order by COUNT(Medication) desc) as [Rank] from patient_data
 group by Medical_Condition,Medication
@@ -63,16 +62,12 @@ order by COUNT(Hospital) DESC;
 
 -- 11. Identifying Average Billing Amount by Medical Condition.
 
-select * from patient_data;
-
 select Medical_Condition,Round(AVG(Billing_Amount),2)[Avg Bill Amount] 
 from patient_data
 group by Medical_Condition 
 order by AVG(Billing_Amount)
 
 -- 12. Finding Billing Amount of patients admitted and number of days spent in respective hospital.
-
-select * from patient_data;
 
 select Medical_Condition, PatientName, Hospital, DATEDIFF(DAY,Date_of_Admission,Discharge_date) as Number_of_Days, 
 SUM(ROUND(Billing_Amount,2)) over(Partition by Hospital order by Hospital desc) as Total_Amount
@@ -107,15 +102,9 @@ from patient_data
 
 -- 17. Provide a list of hospitals along with the count of patients admitted in the year 2024 AND 2025?
 select distinct Hospital,COUNT(PatientName) as Total_Admitted from patient_data
-where YEAR(Date_of_Admission) in (2012)
+where YEAR(Date_of_Admission) in (2024,2025)
 group by hospital
 order by Total_Admitted desc
-
-select distinct Hospital, Count(*) as Total_Admitted
-FROM patient_data
-WHERE YEAR(Date_of_Admission) IN (2021, 2022)
-GROUP BY Hospital
-ORDER by Total_Admitted DESC;
 
 
 -- 18. Find the average, minimum and maximum billing amount for each insurance provider?
@@ -130,5 +119,5 @@ CASE
 	WHEN Test_Results = 'Inconclusive' THEN 'Need more checkup / cannot be discharged'
 	WHEN Test_Results = 'Normal' THEN 'Can get Discharge but need to follow prescribed medication timely'
 	WHEN Test_Results = 'Abnormal' THEN 'Needs more attention and more tests'
-	END AS 'Status'
+END AS 'Status'
 from patient_data
